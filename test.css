@@ -9,7 +9,6 @@
 .menu{
     text-align: right;
     font-family: 'Inter';
-    font-style: normal;
     font-weight: 500;
     font-size: 36px;
     margin: 57px 0px;
@@ -26,6 +25,11 @@ img.bannerPhoto{
     width: 1750px;
     height: 713px;
 }
+
+.miniPhotos>img{
+    width: 240px;
+    height: 159px;
+}
 /* ----- ----- ----- ----- ----- */
 /* 공통 버튼 */
 .txt-1>a, .txt-3>div>a{
@@ -41,16 +45,22 @@ img.bannerPhoto{
 /* ----- */
 /* .txt-1 전체 */
 .txt-1{
-    width:1750px;
+    width: 1549px;
+    height: 559px;
     margin:130px auto 110px auto;
 }
 /* .txt-1 소제목 */
-.txt-1 > b{font-size:74px;}
+.txt-1 > b{
+    font-size:74px;
+    font-weight: 600;
+}
 /* .txt-1 내용 */
 .txt-1 > p{
     font-size:36px;
-    margin:52px 0;
     line-height: 43px; /*줄간격*/
+    width: 1080px;
+    height: 314px;
+    margin: 52px 0 0 0;
     color: #545454;
 }
 /* ----- */
