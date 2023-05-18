@@ -1,8 +1,100 @@
-div.wrap{
+/* 전체화면 */
+.wrap{
+    border:5px solid #ff0000; /*두께 5px 직선 빨강(임시선)*/
     width: 1750px;
-    border:5px solid #f00; /*두께 5px 직선 빨강*/
+    margin: auto;
 }
 
-img{
-    width: 100%;
+/* 메뉴 */
+.menu{
+    text-align: right;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    margin: 57px 0px;
 }
+/* 메뉴의 각 링크(메뉴>a) */
+.menu>a{
+    color: black;
+    text-decoration: none;
+    margin: 0px 0px 0px 60px;
+}
+/* ----- ----- ----- ----- ----- */
+/* 배너사진 */
+img.bannerPhoto{
+    width: 1750px;
+    height: 713px;
+}
+/* ----- ----- ----- ----- ----- */
+/* 공통 버튼 */
+.txt-1>a, .txt-3>div>a{
+    color:black;
+    font-size: 32px;
+    font-weight: 600;
+    text-decoration: none;
+    padding:15px 20px;
+    border-radius: 40px;
+    display: inline-block;
+    background: #D9D9D9;
+}
+/* ----- */
+/* .txt-1 전체 */
+.txt-1{
+    width:1750px;
+    margin:130px auto 110px auto;
+}
+/* .txt-1 소제목 */
+.txt-1 > b{font-size:74px;}
+/* .txt-1 내용 */
+.txt-1 > p{
+    font-size:36px;
+    margin:52px 0;
+    line-height: 43px; /*줄간격*/
+    color: #545454;
+}
+/* ----- */
+.txt-2, .txt-3{
+    display: flex;
+    align-items: center;
+}
+.txt-2>div, .txt-3>div{width:50%}
+.txt-2>div>img, .txt-3>div>img{width:100%}
+
+.txt-2>div>b, .txt-3>div>b{
+    font-size: 40px;
+}
+.txt-2>div>p, .txt-3>div>p{
+    font-weight: 400;
+    font-size: 34px;
+    color: #545454;
+
+}
+/* ----- */
+.txt-3{
+    flex-direction: row-reverse;
+}
+
+/* .txt-2 img{
+    width: 765px;
+    height: 549px;
+}
+
+.txt-3 img{
+    width: 613px;
+    height: 631px;
+}
+
+.txt-2,.txt-3 b{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.txt-2,.txt-3 p{
+    font-weight: 400;
+    font-size: 34px;
+    color: #545454;
+} */
+/* ----- ----- ----- ----- ----- */
+
+
