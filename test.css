@@ -1,7 +1,7 @@
 /* 전체화면 */
 .wrap{
     border:5px solid #ff0000; /*두께 5px 직선 빨강(임시선)*/
-    width: 1750px;
+    width: 1920px;
     margin: auto;
 }
 
@@ -11,7 +11,7 @@
     font-family: 'Inter';
     font-weight: 500;
     font-size: 36px;
-    margin: 57px 0px;
+    margin: 57px 84px 57px 0px;
 }
 /* 메뉴의 각 링크(메뉴>a) */
 .menu>a{
@@ -20,6 +20,11 @@
     margin: 0px 0px 0px 60px;
 }
 /* ----- ----- ----- ----- ----- */
+/* 배너 */
+.banner{
+    margin: 0 85px;
+}
+
 /* 배너사진 */
 img.bannerPhoto{
     width: 1750px;
@@ -31,6 +36,10 @@ img.bannerPhoto{
     height: 159px;
 }
 /* ----- ----- ----- ----- ----- */
+/* 컨텐츠 */
+.contents{
+    margin: 0 85px 176px 85px;
+}
 /* 공통 버튼 */
 .txt-1>a, .txt-3>div>a{
     color:black;
@@ -68,8 +77,16 @@ img.bannerPhoto{
     display: flex;
     align-items: center;
 }
-.txt-2>div, .txt-3>div{width:50%}
-.txt-2>div>img, .txt-3>div>img{width:100%}
+.txt-2>div>img{
+    width: 765px;
+    height: 549px;
+    margin: 0 89px 0 0;
+}
+
+.txt-3>div>img{
+    width: 613px;
+    height: 631px;
+}
 
 .txt-2>div>b, .txt-3>div>b{
     font-size: 40px;
@@ -78,11 +95,11 @@ img.bannerPhoto{
     font-weight: 400;
     font-size: 34px;
     color: #545454;
-
 }
 /* ----- */
 .txt-3{
     flex-direction: row-reverse;
+    justify-content: end;
 }
 /* ----- ----- ----- ----- ----- */
 
