@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<>
     <!-- flex -->
     <!-- 
         1. 세로 콘텐츠
@@ -72,17 +72,121 @@
 
     <!-- ----- -->
     <div class="self">
-            <div>
-                <div class="photo"></div>
-                <div>Exevarri</div>
+            <b>ingredients</b>
+            <div class="bundle">
+                <p>img</p>
+                <b>Exevarri</b>
             </div>
-    </div>
+            <div class="bundle">
+                <p>img</p>
+                <b>Exevarri</b>
+            </div>
+            <div class="bundle">
+                <p>img</p>
+                <b>Exevarri</b>
+            </div>
+            <div class="bundle">
+                <p>img</p>
+                <b>Exevarri</b>
+            </div>
+            <div class="bundle">
+                <p>img</p>
+                <b>Exevarri</b>
+            </div>
+            <div class="bundle">
+                <p>img</p>
+                <b>Exevarri</b>
+            </div>          
+        </div>
+
+            <div class="self-2">
+                <div class="left">
+                    <p><img src="./imgs/img_숲_하이앵글.jpg" alt=""></p>
+                </div>
+                <div class="right">
+                    <p><img src="./imgs/img_숲_하이앵글.jpg" alt=""></p>
+                    <p><img src="./imgs/img_숲_하이앵글.jpg" alt=""></p>
+                    <p><img src="./imgs/img_숲_하이앵글.jpg" alt=""></p>
+                </div>
+            </div>
+            
+            <div class="self-3">
+                <div class="L">
+                    <img src="./imgs/img_겨울숲.jpg" alt="">
+                </div>
+
+                <div class="R">
+                    <h2>Precise Created Only For you</h2>
+                    <p>
+                        어쩌구저쩌구
+                    </p>
+                    <a href="#">Get Start</a>
+                </div>
+            </div>
+
+            <style>
+                /* .self-2{
+                    width: 1000px;
+                    margin: 100px auto;
+                    display: flex;
+                }
+                .self-2 .left{width:70%;}
+                .self-2 .right{
+                    width:20%;
+                }
+                .self-2 img{width:100%;} */
+                .self-2{
+                    width: 1000px;
+                    margin: 100px auto;
+                    display: flex;
+                    justify-content: space-evenly
+                }
+                .self-2 .left{width:70%;}
+                .self-2 .right{
+                    width:20%;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .self-2 img{
+                    width:100%;                                       
+                }
+                /* .self-2>.right>img{
+                    height:30%;
+                } */
+                /* ----- ----- ----- */
+                .self-3{
+                    width: 1000px;
+                    border: 1px solid black;
+                    margin: 50px auto;
+                    display: flex;
+                    
+                }
+                div.L{ /*img의 p태그*/
+                    width: 40%;
+                }
+                div.R{ /*내용의 p태그*/
+                    width: 60%;
+                    display:flex;
+                    flex-wrap: wrap;
+                }               
+                div.R>a{
+                    padding: 30px;
+                    height: 30px;
+
+                    background-color: yellow;
+                    text-decoration: none;
+                }
+               
+
+            </style>
+            
 
     <style>
         h2{ }
         /* 부모 */
         .flex{ 
-            width: 800px; margin: 100px auto;
+            width: 800px; 
+            margin: 100px auto;
             border: 1px solid black;
             display: flex;
             color:white;
@@ -109,13 +213,30 @@
         /* ----- */
         .self{
             width: 1000px;
+            height: 1000px;
             border: 1px solid black;
             display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-content: space-evenly;
+            margin: auto;
         }
-        .self .photo{
-            background-color: gray;
-            width: 100;
-            height: 100;
+        .self>b{
+            width: 100%;
+            text-align: center;
+            font-size: 2em;
+        }
+        .bundle{
+            text-align: center;
+            width: 30%;
+        }
+        .bundle>p{
+            background-color: rgb(255, 127, 127);
+            /* width: 300px; */
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         /* 
         display: flex;
